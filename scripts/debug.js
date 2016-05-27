@@ -1,19 +1,19 @@
 var app = app || {};
 
 app.func9 = function(){
-  console.log("inside function9")
+  console.log("inside function9");
   console.log("The end");
 }
 
 app.func8 = function(){
-  console.log("inside function8")
+  console.log("inside function8");
   setTimeout(function(){
     app.func9();
   }, 0);
 }
 
 app.func7 = function(){
-  console.log("inside function7")
+  console.log("inside function7");
   setTimeout(function(){
     app.func8();
   }, 1000);
@@ -25,7 +25,7 @@ app.func5 = function(){
 }
 
 app.func6 = function(){
-  console.log("inside function6")
+  console.log("inside function6");
   setTimeout(function(){
     app.func7();
   }, 1000, 100);
